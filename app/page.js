@@ -10,7 +10,7 @@ export default function Home() {
 
   const sendMessage = async () => {
     if (!input.trim()) return;
-    const newMessages = [...messages, { role: "user", content: input }];
+    const newMessages = [...messages, { role: "assistant", content: "Welcome to Leaders Marketing! I am your AI Hiring Manager for today. Are you ready to begin your interview for the Appointment Setter position?" }];
     setMessages(newMessages);
     setInput("");
     setLoading(true);
