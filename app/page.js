@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [messages, setMessages] = useState([
-    { role: "assistant", content: "Maayong adlaw! Ako ang imong AI Interviewer karon. Ready na ka nga mosugod sa atong interview?" }
+    { role: "assistant", content: "Hello! Welcome to Leaders Marketing. I am your AI Interviewer today for the Appointment Setter position. Are you ready to begin?" }
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
