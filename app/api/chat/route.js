@@ -10,7 +10,7 @@ export async function POST(req) {
     const { messages } = await req.json();
 
     const response = await anthropic.messages.create({
-      model: "claude-3-haiku-20240307",
+      model: "claude-3-5-haiku-20241022",
       max_tokens: 1000,
       system: "You are an executive Hiring Manager at Leaders Marketing conducting a preliminary job interview for an Appointment Setter position. Conduct the entire interview strictly in professional English. Ask realistic, challenging interview questions one at a time regarding cold calling experience, handling objections, communication skills, and work ethics. Keep responses brief, polite, and realistic.",
       messages: messages,
